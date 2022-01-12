@@ -20,8 +20,12 @@ const config = {
 	androidClientId:
 		'716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com',
 	iosClientId:
-		'716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
-	// "716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com",
+		// real
+		// '716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
+		// expo
+		'716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com',
+	webClientId:
+		'716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com',
 	scopes: ['profile', 'email'],
 	permissions: ['public_profile', 'email', 'gender', 'location'],
 };
