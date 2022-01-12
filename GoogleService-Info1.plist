@@ -3,11 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com</string>
+	<string>716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyC1dHNPCGT3X6sItGSS0DIE4SLKV8TPmes</string>
 	<key>GCM_SENDER_ID</key>
@@ -15,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.michaelsatumbajr.lifter</string>
+	<string>host.exp.exponent</string>
 	<key>PROJECT_ID</key>
 	<string>lifter-ios-v1</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:716473907866:ios:e003ece98c0c3c25dffd23</string>
+	<string>1:716473907866:ios:ce607b8fbbbe2f97dffd23</string>
 </dict>
 </plist>
