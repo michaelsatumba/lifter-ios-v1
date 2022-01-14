@@ -62,23 +62,26 @@ export const AuthProvider = ({ children }) => {
 	const signInWithGoogle = async () => {
 		setLoading(true);
 
-		await Google.logInAsync(config)
-			.then(async (logInResult) => {
-				if (logInResult.type === 'success') {
-					//login...
-					const { idToken, accessToken } = logInResult;
-					const credential = GoogleAuthProvider.credential(
-						idToken,
-						accessToken
-					);
+		try {
+			console.log(`about to call logInAsync()`);
+			let logInResult = await Google.logInAsync(config);
+			console.log(`Got logInResult: (${logInResult.type})`);
+			if (logInResult.type === 'success') {
+				//login...
+				const { idToken, accessToken } = logInResult;
+				const credential = GoogleAuthProvider.credential(idToken, accessToken);
 
-					await signInWithCredential(auth, credential);
-				}
+				// we might not do anything w/ the return, but we want to catch an exception
+				let signInCredentials = await signInWithCredential(auth, credential);
+			}
 
-				return Promise.reject();
-			})
-			.catch((error) => setError(error))
-			.finally(() => setLoading(false));
+			// same result as 'return Promise.reject()'
+			throw new Error(`Login to Google failed: (${logInResult.type})`);
+		} catch (ex) {
+			console.error(ex);
+		}
+		setLoading(false);
+		return null; // success!
 	};
 
 	const memoedValue = useMemo(
