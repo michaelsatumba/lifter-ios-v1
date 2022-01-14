@@ -15,7 +15,7 @@ const LoginScreen = () => {
 	const navigation = useNavigation();
 
 	// const showAlert = () => {
-	// 	Alert.alert('hello');
+	// 	Alert.alert('hi');
 	// };
 
 	return (
