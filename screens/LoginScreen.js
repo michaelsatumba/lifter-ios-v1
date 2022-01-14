@@ -14,9 +14,9 @@ const LoginScreen = () => {
 	const { signInWithGoogle, loading } = useAuth();
 	const navigation = useNavigation();
 
-	const showAlert = () => {
-		Alert.alert('hi');
-	};
+	// const showAlert = () => {
+	// 	Alert.alert('hello');
+	// };
 
 	return (
 		<View style={tw('flex-1')}>
@@ -31,8 +31,8 @@ const LoginScreen = () => {
 						{ marginHorizontal: '25%' },
 					]}
 					onPress={() => {
-						showAlert();
-						console.log(`clicked!`);
+						// showAlert();
+						// console.log(`clicked!`);
 						signInWithGoogle();
 					}}
 				>

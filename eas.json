@@ -4,6 +4,9 @@
 	},
 	"build": {
 		"preview": {
+			"developmentClient": true,
+			"distribution": "internal",
+			"releaseChannel": "channel-development",
 			"ios": {
 				"simulator": true
 			}
