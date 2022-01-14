@@ -1,42 +1,40 @@
 {
-  "expo": {
-    "name": "Lifter",
-    "slug": "Lifter",
-    "version": "1.0.1",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/SplashPage.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.michaelsatumbajr.lifter",
-      "config": {
-        "googleSignIn": {
-          "reservedClientId": "com.googleusercontent.apps.716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0"
-        }
-      },
-      "googleServicesFile": "./GoogleService-Info.plist"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "host.exp.exponent"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "description": "Find workout partners based on exercise interest",
-    "githubUrl": "https://github.com/michaelsatumba/lifter-ios-v1/tree/appStore"
-  }
+	"expo": {
+		"name": "Lifter",
+		"slug": "Lifter",
+		"version": "1.0.2",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/SplashPage.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.michaelsatumbajr.lifter",
+			"config": {
+				"googleSignIn": {
+					"reservedClientId": "com.googleusercontent.apps.716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0"
+				}
+			},
+			"googleServicesFile": "./GoogleService-Info.plist"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "host.exp.exponent"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"description": "Find workout partners based on exercise interest",
+		"githubUrl": "https://github.com/michaelsatumba/lifter-ios-v1/tree/appStore"
+	}
 }
