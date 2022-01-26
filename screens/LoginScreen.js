@@ -1,12 +1,6 @@
 import { useNavigation } from '@react-navigation/core';
-import React, { useLayoutEffect } from 'react';
-import {
-	View,
-	Text,
-	Alert,
-	ImageBackground,
-	TouchableOpacity,
-} from 'react-native';
+import React from 'react';
+import { View, Text, ImageBackground, TouchableOpacity } from 'react-native';
 import useAuth from '../hooks/useAuth';
 import tw from 'tailwind-rn';
 
