@@ -25,6 +25,13 @@ import {
 	serverTimestamp,
 } from '@firebase/firestore';
 import { db } from '../firebase';
+import { Base64 } from 'js-base64';
+
+//success!
+// var encode = Base64.encode('hello');
+// console.log(encode);
+// var decode = Base64.decode(encode);
+// console.log(decode);
 
 const MessageScreen = () => {
 	const { user } = useAuth();
@@ -58,11 +65,14 @@ const MessageScreen = () => {
 			userId: user.uid,
 			displayName: user.displayName,
 			photoURL: matchDetails.users[user.uid].photoURL,
-			message: input,
+			messageEncrypted: Base64.encode(input),
 		});
 
 		setInput('');
 	};
+
+	const messageDecrypt = Base64.decode(Base64.encode(input));
+	console.log(messageDecrypt);
 
 	return (
 		<SafeAreaView style={tw('flex-1')}>
@@ -82,9 +92,12 @@ const MessageScreen = () => {
 						inverted={-1}
 						style={tw('pl-4')}
 						keyExtractor={(item) => item.id}
-						renderItem={({ item: message }) =>
-							message.userId === user.uid ? (
-								<SenderMessage key={message.id} message={message} />
+						renderItem={({ item: messageEncrypted }) =>
+							messageEncrypted.userId === user.uid ? (
+								<SenderMessage
+									key={messageEncrypted.id}
+									message={messageDecrypt}
+								/>
 							) : (
 								<ReceiverMessage key={message.id} message={message} />
 							)
