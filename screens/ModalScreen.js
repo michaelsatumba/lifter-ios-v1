@@ -39,11 +39,11 @@ const ModalScreen = () => {
 				source={require('../Lifterlogo2.png')}
 			/>
 
-			<Text style={tw('text-xl text-gray-500 p-2 font-bold')}>
+			<Text style={tw('text-xl text-gray-500 font-bold')}>
 				Welcome {user.displayName}
 			</Text>
 
-			<Text style={tw('text-center p-4 font-bold text-pink-400')}>
+			<Text style={tw('text-center p-1 font-bold text-pink-400')}>
 				Step 1: Age
 			</Text>
 			<TextInput
@@ -68,7 +68,7 @@ const ModalScreen = () => {
 			<TouchableOpacity
 				disabled={incompleteForm}
 				style={[
-					tw('w-64 p-3 rounded-xl absolute bottom-10'),
+					tw('w-64 p-3 rounded-xl'),
 					incompleteForm ? tw('bg-gray-400') : tw('bg-pink-400'),
 				]}
 				onPress={updateUserProfile}
