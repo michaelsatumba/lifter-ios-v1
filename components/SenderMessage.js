@@ -1,8 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import tw from 'tailwind-rn';
+import { Base64 } from 'js-base64';
 
 const SenderMessage = ({ message }) => {
+	const decode = function (week) {
+		return Base64.decode(week);
+	};
+	// console.log(decode(message.messageEncrypted));
 	return (
 		<View
 			style={[
@@ -10,7 +15,7 @@ const SenderMessage = ({ message }) => {
 				{ alignSelf: 'flex-start', marginLeft: 'auto' },
 			]}
 		>
-			<Text style={tw('text-white')}>{message.messageDecrypt}</Text>
+			<Text style={tw('text-white')}>{decode(message.messageEncrypted)}</Text>
 		</View>
 	);
 };

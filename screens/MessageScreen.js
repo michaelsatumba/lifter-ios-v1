@@ -33,6 +33,18 @@ import { Base64 } from 'js-base64';
 // var decode = Base64.decode(encode);
 // console.log(decode);
 
+// const decode = Base64.decode();
+
+const encode = function (day) {
+	return Base64.encode(day);
+};
+
+console.log(encode('hello'));
+
+const decode = function (week) {
+	return Base64.decode(week);
+};
+
 const MessageScreen = () => {
 	const { user } = useAuth();
 	const { params } = useRoute();
@@ -65,14 +77,14 @@ const MessageScreen = () => {
 			userId: user.uid,
 			displayName: user.displayName,
 			photoURL: matchDetails.users[user.uid].photoURL,
-			messageEncrypted: Base64.encode(input),
+			messageEncrypted: encode(input),
 		});
 
 		setInput('');
 	};
 
-	const messageDecrypt = Base64.decode(Base64.encode(input));
-	console.log(messageDecrypt);
+	// const messageDecrypt = Base64.decode(Base64.encode(input));
+	// console.log(messageDecrypt);
 
 	return (
 		<SafeAreaView style={tw('flex-1')}>
@@ -96,10 +108,13 @@ const MessageScreen = () => {
 							messageEncrypted.userId === user.uid ? (
 								<SenderMessage
 									key={messageEncrypted.id}
-									message={messageDecrypt}
+									message={messageEncrypted}
 								/>
 							) : (
-								<ReceiverMessage key={message.id} message={message} />
+								<ReceiverMessage
+									key={messageEncrypted.id}
+									message={messageEncrypted}
+								/>
 							)
 						}
 					/>
