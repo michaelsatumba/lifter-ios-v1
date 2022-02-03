@@ -12,16 +12,12 @@ To start
 
 Enjoy the build!
 
-<img src='preview0.png' width='100' />
+<img src='preview0.png' width='100' /> <img src='preview1.png' width='100' /> <img src='preview2.png' width='100' /> <img src='preview3.png' width='100' /> <img src='preview4.png' width='100' /> <img src='preview5.png' width='100' />
 
-<img src='preview1.png' width='100' />
 
-<img src='preview2.png' width='100' />
 
-<img src='preview3.png' width='100' />
 
-<img src='preview4.png' width='100' />
 
-<img src='preview5.png' width='100' />
+
 
 
