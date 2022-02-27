@@ -19,7 +19,9 @@ const AuthContext = createContext({});
 
 const config = {
 	androidClientId:
-		'716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com',
+		'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
+	// androidStandaloneAppClientId: '',
+	// add this!
 	iosClientId:
 		// real
 		// '716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
@@ -27,8 +29,6 @@ const config = {
 		'716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com',
 	iosStandaloneAppClientId:
 		'716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
-	androidStandaloneAppClientId: '',
-	// add this!
 	webClientId:
 		'716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com',
 	scopes: ['profile', 'email'],
