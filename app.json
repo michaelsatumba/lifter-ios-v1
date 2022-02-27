@@ -29,7 +29,8 @@
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
 			},
-			"package": "host.exp.exponent"
+			"package": "com.michaelsatumbajr.lifter",
+			"versionCode": 1
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
