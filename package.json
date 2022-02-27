@@ -17,6 +17,7 @@
     "expo-google-app-auth": "~9.0.0",
     "expo-google-sign-in": "~10.0.3",
     "expo-status-bar": "~1.1.0",
+    "expo-updates": "~0.10.15",
     "firebase": "^9.6.0",
     "js-base64": "^3.7.2",
     "react": "17.0.1",

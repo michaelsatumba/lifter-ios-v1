@@ -20,7 +20,9 @@ const AuthContext = createContext({});
 const config = {
 	androidClientId:
 		'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
-	// androidStandaloneAppClientId: '',
+	androidStandaloneAppClientId:
+		'716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com',
+
 	// add this!
 	iosClientId:
 		// real

@@ -1,54 +1,98 @@
 {
-  "project_info": {
-    "project_number": "716473907866",
-    "project_id": "lifter-ios-v1",
-    "storage_bucket": "lifter-ios-v1.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:716473907866:android:d474613939de7223dffd23",
-        "android_client_info": {
-          "package_name": "host.exp.exponent"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "host.exp.exponent",
-            "certificate_hash": "17e21e9c66d9f19eb4436abbea342a6bf3b1c3fb"
-          }
-        },
-        {
-          "client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCJ4xrsvVq8CyQH45dUmenFWVVlhZEb8uk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "host.exp.exponent"
-              }
-            }
-          ]
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+	"project_info": {
+		"project_number": "716473907866",
+		"project_id": "lifter-ios-v1",
+		"storage_bucket": "lifter-ios-v1.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:716473907866:android:ee93395757d00de4dffd23",
+				"android_client_info": {
+					"package_name": "com.michaelsatumbajr.lifter"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "com.michaelsatumbajr.lifter",
+						"certificate_hash": "750331e2fe8e372b62a68bec19e471216c479026"
+					}
+				},
+				{
+					"client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCJ4xrsvVq8CyQH45dUmenFWVVlhZEb8uk"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
+							"client_type": 3
+						},
+						{
+							"client_id": "716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com",
+							"client_type": 2,
+							"ios_info": {
+								"bundle_id": "com.michaelsatumbajr.lifter"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:716473907866:android:d474613939de7223dffd23",
+				"android_client_info": {
+					"package_name": "host.exp.exponent"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com",
+					"client_type": 1,
+					"android_info": {
+						"package_name": "host.exp.exponent",
+						"certificate_hash": "17e21e9c66d9f19eb4436abbea342a6bf3b1c3fb"
+					}
+				},
+				{
+					"client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCJ4xrsvVq8CyQH45dUmenFWVVlhZEb8uk"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com",
+							"client_type": 3
+						},
+						{
+							"client_id": "716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com",
+							"client_type": 2,
+							"ios_info": {
+								"bundle_id": "com.michaelsatumbajr.lifter"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
 }
