@@ -33,7 +33,7 @@
 			"versionCode": 3,
 			"config": {
 				"googleSignIn": {
-					"reservedClientId": "716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com"
+					"ClientId": "716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com"
 				}
 			},
 			"googleServicesFile": "./google-services.json"
