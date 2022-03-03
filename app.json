@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "Lifter",
 		"slug": "Lifter",
-		"version": "1.0.5",
+		"version": "1.0.6",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
 		"splash": {
@@ -26,11 +26,17 @@
 		},
 		"android": {
 			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive-icon.png",
+				"foregroundImage": "./assets/icon.png",
 				"backgroundColor": "#FFFFFF"
 			},
 			"package": "com.michaelsatumbajr.lifter",
-			"versionCode": 2
+			"versionCode": 3,
+			"config": {
+				"googleSignIn": {
+					"reservedClientId": "716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com"
+				}
+			},
+			"googleServicesFile": "./google-services.json"
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
