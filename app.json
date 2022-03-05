@@ -32,9 +32,7 @@
 			"package": "com.michaelsatumbajr.lifter",
 			"versionCode": 3,
 			"config": {
-				"googleSignIn": {
-					"ClientId": "716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com"
-				}
+				"googleSignIn": {}
 			},
 			"googleServicesFile": "./google-services.json"
 		},

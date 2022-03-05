@@ -7,9 +7,16 @@
 			"developmentClient": true,
 			"distribution": "internal",
 			"releaseChannel": "channel-development",
+			"android": {
+				"buildType": "apk"
+			},
 			"ios": {
 				"simulator": true
 			}
+		},
+		"development": {
+			"developmentClient": true,
+			"distribution": "internal"
 		},
 		"production": {}
 	},

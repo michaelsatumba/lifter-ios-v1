@@ -18,12 +18,11 @@ import { auth } from '../firebase';
 const AuthContext = createContext({});
 
 const config = {
-	androidClientId:
-		'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
+	// androidClientId:
+	// 	'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
 	androidStandaloneAppClientId:
 		'716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com',
 
-	// add this!
 	iosClientId:
 		// real
 		// '716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
