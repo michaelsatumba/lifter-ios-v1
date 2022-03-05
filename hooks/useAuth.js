@@ -6,7 +6,6 @@ import React, {
 	useState,
 } from 'react';
 import * as Google from 'expo-google-app-auth';
-
 import {
 	GoogleAuthProvider,
 	onAuthStateChanged,
@@ -105,3 +104,6 @@ export const AuthProvider = ({ children }) => {
 export default function useAuth() {
 	return useContext(AuthContext);
 }
+
+// things to do
+// look in notion
