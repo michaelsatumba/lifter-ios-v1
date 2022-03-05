@@ -18,15 +18,11 @@ import { auth } from '../firebase';
 const AuthContext = createContext({});
 
 const config = {
-	// androidClientId:
-	// 	'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
+	androidClientId:
+		'716473907866-gphr6ie4o3f6e8dtr36n4ho9vd35lfm0.apps.googleusercontent.com',
 	androidStandaloneAppClientId:
 		'716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com',
-
 	iosClientId:
-		// real
-		// '716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
-		// expo
 		'716473907866-u9mvqtjkfiudblekl4dr05225qs1lup6.apps.googleusercontent.com',
 	iosStandaloneAppClientId:
 		'716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
@@ -67,7 +63,6 @@ export const AuthProvider = ({ children }) => {
 
 	const signInWithGoogle = async () => {
 		setLoading(true);
-
 		try {
 			console.log(`about to call logInAsync()`);
 			let logInResult = await Google.logInAsync(config);
@@ -80,7 +75,6 @@ export const AuthProvider = ({ children }) => {
 				// we might not do anything w/ the return, but we want to catch an exception
 				let signInCredentials = await signInWithCredential(auth, credential);
 			}
-
 			// same result as 'return Promise.reject()'
 			throw new Error(`Login to Google failed: (${logInResult.type})`);
 		} catch (ex) {

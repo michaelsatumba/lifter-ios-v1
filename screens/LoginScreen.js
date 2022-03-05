@@ -1,4 +1,3 @@
-import { useNavigation } from '@react-navigation/core';
 import React from 'react';
 import { View, Text, ImageBackground, TouchableOpacity } from 'react-native';
 import useAuth from '../hooks/useAuth';
@@ -6,7 +5,6 @@ import tw from 'tailwind-rn';
 
 const LoginScreen = () => {
 	const { signInWithGoogle, loading } = useAuth();
-	const navigation = useNavigation();
 
 	// const showAlert = () => {
 	// 	Alert.alert('hi');

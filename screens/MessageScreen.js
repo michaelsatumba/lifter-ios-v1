@@ -39,7 +39,7 @@ const encode = function (day) {
 	return Base64.encode(day);
 };
 
-console.log(encode('hello'));
+// console.log(encode('hello'));
 
 const decode = function (week) {
 	return Base64.decode(week);
