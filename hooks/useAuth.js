@@ -6,6 +6,7 @@ import React, {
 	useState,
 } from 'react';
 import * as Google from 'expo-google-app-auth';
+// import * as Google from 'expo-auth-session/providers/google';
 import {
 	GoogleAuthProvider,
 	onAuthStateChanged,
@@ -31,6 +32,16 @@ const config = {
 	permissions: ['public_profile', 'email', 'gender', 'location'],
 };
 
+// const [request, response, promptAsync] = Google.useAuthRequest({
+// 	//   expoClientId: 'GOOGLE_GUID.apps.googleusercontent.com',
+// 	iosClientId:
+// 		'716473907866-7vmae79ied1f6lj80bie6bc0c2vng4a0.apps.googleusercontent.com',
+// 	androidClientId:
+// 		'716473907866-ts1gjlj7lv544poutddhnogujv4k4sae.apps.googleusercontent.com',
+// 	webClientId:
+// 		'716473907866-u91djp14bj54sb58jfmnrlfoajanacb4.apps.googleusercontent.com',
+// });
+
 export const AuthProvider = ({ children }) => {
 	const [error, setError] = useState(null);
 	const [user, setUser] = useState(null);
@@ -51,6 +62,12 @@ export const AuthProvider = ({ children }) => {
 			}),
 		[]
 	);
+
+	// React.useEffect(() => {
+	// 	if (response?.type === 'success') {
+	// 	  const { authentication } = response;
+	// 	  }
+	//   }, [response]);
 
 	const logout = () => {
 		setLoading(true);
@@ -104,6 +121,3 @@ export const AuthProvider = ({ children }) => {
 export default function useAuth() {
 	return useContext(AuthContext);
 }
-
-// things to do
-// look in notion
